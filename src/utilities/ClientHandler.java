@@ -45,6 +45,7 @@ public class ClientHandler extends Thread {
             }
 
             if(length < 0) {
+                System.out.println("length: " + length);
                 length = Math.abs(length);
                 byte[] incomingBytes = new byte[length];
                 try {
